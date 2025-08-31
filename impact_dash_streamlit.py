@@ -1099,8 +1099,8 @@ def main():
         # Show instructions when not computed
         st.markdown("""
         <div style='background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 40px; border-radius: 15px; text-align: center; margin: 20px 0;'>
-            <h2 style='color: #1e3c72; margin-bottom: 20px;'>🚀 Ready to Begin Assessment</h2>
-            <p style='font-size: 18px; color: #2a5298; margin-bottom: 15px;'>Complete the subject information and test scores in the sidebar</p>
+            <h2 style='color: #1e3c72; margin-bottom: 20px;'> Ready to Begin Assessment</h2>
+            <p style='font-size: 18px; color: #2a5298; margin-bottom: 15px;'>Complete the subject information and test scores in the sidebar and select method</p>
             <p style='font-size: 16px; color: #666;'>Then click <strong>"COMPUTE ASSESSMENT"</strong> to generate results</p>
         </div>
         """, unsafe_allow_html=True)
