@@ -1,20 +1,20 @@
 # Cognitive Assessment Dashboard
 
-A professional clinical assessment tool for cognitive evaluation using two validated methodologies: Individual Equivalent Scores (ES) and Iverson Collective Classification.
+A clinical assessment tool for ImPACT based Concussion evaluation using two validated methodologies: Individual Equivalent Scores (ES) and Iverson Collective Classification.
 
 ## Features
 
 - **Dual Assessment Methods**: Choose between Individual ES Method (0-4 scoring) or Iverson Collective Classification
 - **Demographic Adjustment**: Automatic score adjustment for age, sex, and education
-- **Statistical Tolerance Limits**: Uses R-based statistical methodology for precise threshold calculations
+- **Statistical Tolerance Limits**: Uses Non Parametric Tolerance limits and ES methodology for precise threshold calculations
 - **Professional Reporting**: Generate comprehensive Word documents with detailed analysis
 - **Interactive Visualizations**: Gauge charts and color-coded displays for clear result interpretation
-- **Clinical Decision Support**: Evidence-based classifications with actionable recommendations
+- **Clinical Decision Support**: Supports the Clinicians to make informed decisions as per the exisiting statistical methodologies and Normative data from the relevant cohort for Jockeys 
 
 ## Assessment Methods
 
 ### Individual ES Method
-- Provides domain-specific scores on a 0-4 scale
+- Provides domain-specific scores on a 0-4 scale (Impaired, Borderline, low normal, Normal, High Normal)
 - Based on statistically computed tolerance limits using beta distributions
 - Each cognitive domain evaluated independently
 - Scores adjusted for demographic factors (age, sex, education)
@@ -85,7 +85,7 @@ streamlit run dashboard.py
 
 ### Tolerance Limits Calculation
 
-The dashboard uses advanced statistical methods for threshold determination:
+The dashboard uses existing statistical methods for threshold determination: using Statesmodels and other libraries, see the requirement.txt libraries for more information
 
 ```python
 # Outer and Inner Tolerance Limits using beta distributions
@@ -113,11 +113,11 @@ Where predicted scores account for:
 
 ### ES Scores (0-4 Scale)
 
-- **ES 0**: Well Below Average (≤5th percentile)
-- **ES 1**: Below Average (5th-16th percentile)  
-- **ES 2**: Low Average (16th-25th percentile)
-- **ES 3**: Average (25th-50th percentile)
-- **ES 4**: Above Average (≥50th percentile)
+- **ES 0**: Impaired 
+- **ES 1**: Borderline
+- **ES 2**: Low Normal 
+- **ES 3**: Normal 
+- **ES 4**: High Normal
 
 ### Iverson Classifications
 
@@ -131,12 +131,12 @@ Where predicted scores account for:
 
 ```
 cognitive-assessment/
-├── dashboard.py                 # Main Streamlit application
+├── impact_dash_streamlit.py                 # Main Streamlit application
 ├── fit_models.py               # Model training pipeline
 ├── cognitive_models.pkl        # Trained regression models
 ├── model_parameters.json       # Statistical parameters
 ├── model_summaries.json        # Model performance metrics
-├── impact_phi_reading.csv      # Normative dataset
+├── your_raw_file.csv           # Normative dataset - Use your own file to generate model
 └── README.md                   # This file
 ```
 
