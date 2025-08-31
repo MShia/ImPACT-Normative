@@ -1,0 +1,25 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Environment variables / secrets
+.env
+.streamlit/secrets.toml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Jupyter/Notebook checkpoints
+.ipynb_checkpoints/

@@ -1,0 +1,78 @@
+{
+  "visual_memory": {
+    "summary": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:          visual_memory   R-squared:                       0.013\nModel:                            OLS   Adj. R-squared:                  0.009\nMethod:                 Least Squares   F-statistic:                     2.913\nDate:                Wed, 20 Aug 2025   Prob (F-statistic):             0.0337\nTime:                        12:13:56   Log-Likelihood:                -2631.5\nNo. Observations:                 663   AIC:                             5271.\nDf Residuals:                     659   BIC:                             5289.\nDf Model:                           3                                         \nCovariance Type:            nonrobust                                         \n===============================================================================\n                  coef    std err          t      P>|t|      [0.025      0.975]\n-------------------------------------------------------------------------------\nconst          63.9754      3.741     17.101      0.000      56.629      71.321\nage            -0.1668      0.070     -2.386      0.017      -0.304      -0.029\nsex_encoded    -0.5098      1.190     -0.428      0.669      -2.847       1.827\neducation       0.4601      0.255      1.802      0.072      -0.041       0.961\n==============================================================================\nOmnibus:                       10.113   Durbin-Watson:                   1.968\nProb(Omnibus):                  0.006   Jarque-Bera (JB):                6.240\nSkew:                          -0.028   Prob(JB):                       0.0442\nKurtosis:                       2.528   Cond. No.                         217.\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.",
+    "params": {
+      "const": 63.97538620105939,
+      "age": -0.16677257942653023,
+      "sex_encoded": -0.5098139754240313,
+      "education": 0.4601305504532833
+    },
+    "pvalues": {
+      "const": 1.563310159779861e-54,
+      "age": 0.017337193152622804,
+      "sex_encoded": 0.6685019097431291,
+      "education": 0.071925018901091
+    },
+    "rsquared": 0.01308939712238033,
+    "rsquared_adj": 0.008596632617626332,
+    "fvalue": 2.9134393998461214,
+    "f_pvalue": 0.033718013672484254
+  },
+  "verbal_memory": {
+    "summary": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:          verbal_memory   R-squared:                       0.038\nModel:                            OLS   Adj. R-squared:                  0.034\nMethod:                 Least Squares   F-statistic:                     8.685\nDate:                Wed, 20 Aug 2025   Prob (F-statistic):           1.17e-05\nTime:                        12:13:56   Log-Likelihood:                -2587.2\nNo. Observations:                 663   AIC:                             5182.\nDf Residuals:                     659   BIC:                             5200.\nDf Model:                           3                                         \nCovariance Type:            nonrobust                                         \n===============================================================================\n                  coef    std err          t      P>|t|      [0.025      0.975]\n-------------------------------------------------------------------------------\nconst          81.9726      3.499     23.425      0.000      75.101      88.844\nage            -0.0223      0.065     -0.341      0.733      -0.151       0.106\nsex_encoded    -5.1100      1.113     -4.591      0.000      -7.296      -2.924\neducation       0.2655      0.239      1.112      0.267      -0.203       0.734\n==============================================================================\nOmnibus:                       27.629   Durbin-Watson:                   2.057\nProb(Omnibus):                  0.000   Jarque-Bera (JB):               30.252\nSkew:                          -0.523   Prob(JB):                     2.70e-07\nKurtosis:                       3.052   Cond. No.                         217.\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.",
+    "params": {
+      "const": 81.97256701450239,
+      "age": -0.02228814672880603,
+      "sex_encoded": -5.110005497643709,
+      "education": 0.2654986027678281
+    },
+    "pvalues": {
+      "const": 9.481601587962515e-89,
+      "age": 0.7333397445153834,
+      "sex_encoded": 5.294802285640016e-06,
+      "education": 0.2665896342258449
+    },
+    "rsquared": 0.038032725801090406,
+    "rsquared_adj": 0.033653512109744876,
+    "fvalue": 8.684829853417002,
+    "f_pvalue": 1.1722755608773781e-05
+  },
+  "visual_motor_speed": {
+    "summary": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:     visual_motor_speed   R-squared:                       0.110\nModel:                            OLS   Adj. R-squared:                  0.106\nMethod:                 Least Squares   F-statistic:                     27.29\nDate:                Wed, 20 Aug 2025   Prob (F-statistic):           1.21e-16\nTime:                        12:13:56   Log-Likelihood:                -2091.6\nNo. Observations:                 663   AIC:                             4191.\nDf Residuals:                     659   BIC:                             4209.\nDf Model:                           3                                         \nCovariance Type:            nonrobust                                         \n===============================================================================\n                  coef    std err          t      P>|t|      [0.025      0.975]\n-------------------------------------------------------------------------------\nconst          28.7381      1.657     17.342      0.000      25.484      31.992\nage            -0.0376      0.031     -1.214      0.225      -0.098       0.023\nsex_encoded    -3.7087      0.527     -7.035      0.000      -4.744      -2.674\neducation       0.4386      0.113      3.879      0.000       0.217       0.661\n==============================================================================\nOmnibus:                       23.409   Durbin-Watson:                   1.913\nProb(Omnibus):                  0.000   Jarque-Bera (JB):               32.760\nSkew:                           0.325   Prob(JB):                     7.69e-08\nKurtosis:                       3.874   Cond. No.                         217.\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.",
+    "params": {
+      "const": 28.73813521831216,
+      "age": -0.03760289490087574,
+      "sex_encoded": -3.7086941945718217,
+      "education": 0.4386024902841815
+    },
+    "pvalues": {
+      "const": 8.856054637309642e-56,
+      "age": 0.22508799926034778,
+      "sex_encoded": 4.993259177400594e-12,
+      "education": 0.00011552384672878542
+    },
+    "rsquared": 0.11049072105986779,
+    "rsquared_adj": 0.10644136167167295,
+    "fvalue": 27.28597550071332,
+    "f_pvalue": 1.2128852092995027e-16
+  },
+  "reaction_speed": {
+    "summary": "                             OLS Regression Results                            \n===============================================================================\nDep. Variable:     reaction_efficiency   R-squared:                       0.092\nModel:                             OLS   Adj. R-squared:                  0.087\nMethod:                  Least Squares   F-statistic:                     22.14\nDate:                 Wed, 20 Aug 2025   Prob (F-statistic):           1.14e-13\nTime:                         12:13:56   Log-Likelihood:                 94.667\nNo. Observations:                  663   AIC:                            -181.3\nDf Residuals:                      659   BIC:                            -163.3\nDf Model:                            3                                         \nCovariance Type:             nonrobust                                         \n===============================================================================\n                  coef    std err          t      P>|t|      [0.025      0.975]\n-------------------------------------------------------------------------------\nconst           1.4322      0.061     23.374      0.000       1.312       1.552\nage            -0.0061      0.001     -5.303      0.000      -0.008      -0.004\nsex_encoded    -0.0839      0.019     -4.302      0.000      -0.122      -0.046\neducation       0.0154      0.004      3.687      0.000       0.007       0.024\n==============================================================================\nOmnibus:                        8.773   Durbin-Watson:                   2.032\nProb(Omnibus):                  0.012   Jarque-Bera (JB):                9.248\nSkew:                          -0.222   Prob(JB):                      0.00982\nKurtosis:                       3.370   Cond. No.                         217.\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.",
+    "params": {
+      "const": 1.4321584813139372,
+      "age": -0.006072193432763831,
+      "sex_encoded": -0.08385216608236915,
+      "education": 0.015414732961035679
+    },
+    "pvalues": {
+      "const": 1.820344675674734e-88,
+      "age": 1.554735174607607e-07,
+      "sex_encoded": 1.9475563761859908e-05,
+      "education": 0.0002456339181739885
+    },
+    "rsquared": 0.09156097273297081,
+    "rsquared_adj": 0.08742543846620132,
+    "fvalue": 22.140059016968248,
+    "f_pvalue": 1.1417491199880447e-13
+  }
+}
